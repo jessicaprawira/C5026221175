@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    color: #000000;
+    background-color: #f6eae2;
+    background-image: url('homepfp.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar{
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(249, 212, 232, 0.492);
+    height: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 400px;
+    position: fixed;
+    top: 0; 
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: center; 
+    }
+}
+
+.navbar .links{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    color: rgb(48, 223, 165);
+}
+
+section{
+    min-height: 100vh;
+    padding-top: 160px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.Home{
+    max-width: 50%;
+}
+
+.Home h5{
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.Home h1{
+    font-size: 100px;
+    font-weight: 500;
+    color: #6493d986;
+    font-family: 'Alex Brush', cursive;
+}
+
+.sosmed{
+    position: absolute;
+    bottom: 32px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sosmed a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 400px;
+    background-color: transparent;
+    color: black; 
+    border: 4px;
+    font-size: 30px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 200px;
+}
+
+.heading{
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(108, 31, 136);
+    text-align: center;
+}
+
+.About-Me{
+    text-align: justify;
+}
+
+.About-Me p{
+    font-size: 20px;
+    font-weight: 300;
+    background-color: rgb(246, 172, 184);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.songs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.notes{
+    font-size: 50px;
+    font-weight: 550;
+    color: rgb(236, 55, 191);
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.collections{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 0;
+}
+
+.aheading{
+    font-size: 90px;
+    font-weight: 400;
+    color: rgb(108, 31, 136);
+    text-align: center;
+    font-family: 'Alex Brush', cursive;
+}
+
+.anotes{
+    font-size: 50px;
+    font-weight: 550;
+    color: rgb(111, 189, 225);
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+/* Slideshow container */
+.slide-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+.cheading{
+    font-size: 80px;
+    font-weight: 400;
+    color: rgb(108, 31, 136);
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.csub{
+    font-size: 50px;
+    font-weight: 550;
+    color: rgb(193, 111, 225);
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+    padding-top: 5px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.contact h2{
+    color: black;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 20px;
+    outline: none;
+    background-color: white;
+    font-size: 20px;
+}
