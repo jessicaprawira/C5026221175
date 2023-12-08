@@ -34,7 +34,7 @@
         <div class="form-group row">
             <label for="alamat" class="col-sm-3 col-form-label mr-2">Alamat</label>
             <div class="col-sm-9">
-            <input type="text" class="form-control" id="alamat" name="alamat">
+            <textarea type="text" class="form-control" id="alamat" name="alamat"></textarea>
             </div>
         </div>
 		{{-- Nama <input type="text" name="nama"> <br/> --}}
