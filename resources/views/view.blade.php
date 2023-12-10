@@ -20,26 +20,26 @@
             </div>
         <div class="col-sm-6">
         <div class="form-group row">
-            <label for="nama" class="col-sm-3 col-form-label mr-2">Nama</label>
-            <div class="col-sm-9">
+            <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+            <div class="col-sm-10">
             <input type="text" class="form-control" name="nama" value="{{ $p->pegawai_nama}}" readonly>
             </div>
         </div>
         <div class="form-group row">
-            <label for="jabatan" class="col-sm-3 col-form-label mr-2">Jabatan</label>
-            <div class="col-sm-9">
+            <label for="jabatan" class="col-sm-2 col-form-label">Jabatan</label>
+            <div class="col-sm-10">
             <input type="text" class="form-control" name="jabatan" value="{{ $p->pegawai_jabatan}}" readonly>
             </div>
         </div>
         <div class="form-group row">
-            <label for="Umur" class="col-sm-3 col-form-label mr-2">Umur</label>
-            <div class="col-sm-9">
+            <label for="Umur" class="col-sm-2 col-form-label">Umur</label>
+            <div class="col-sm-10">
             <input type="text" class="form-control" name="umur" value="{{ $p->pegawai_umur}}" readonly>
             </div>
         </div>
         <div class="form-group row">
-            <label for="alamat" class="col-sm-3 col-form-label mr-2">Alamat</label>
-            <div class="col-sm-9">
+            <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+            <div class="col-sm-10">
             <input type="text" class="form-control" name="alamat" value="{{ $p->pegawai_alamat}}" readonly>
             </div>
         </div>
