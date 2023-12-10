@@ -113,3 +113,12 @@ Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangBelanja
 Route::get('/nilaikuliah','App\Http\Controllers\NilaiController@index');
 Route::get('/nilaikuliah/tambahData','App\Http\Controllers\NilaiController@tambah');
 Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiController@store');
+
+//route CRUD teh
+Route::get('/teh','App\Http\Controllers\TehController@indexteh');
+Route::get('/teh/tambahteh','App\Http\Controllers\TehController@tambahteh');
+Route::post('/teh/store','App\Http\Controllers\TehController@store');
+Route::get('/teh/editteh/{id}','App\Http\Controllers\TehController@edit');
+Route::post('/teh/update','App\Http\Controllers\TehController@update');
+Route::get('/teh/hapus/{id}','App\Http\Controllers\TehController@hapus');
+Route::get('/teh/viewteh/{id}','App\Http\Controllers\TehController@view');
