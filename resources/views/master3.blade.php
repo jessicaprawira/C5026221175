@@ -14,28 +14,15 @@
         <!-- Brand -->
         <a class="navbar-brand" href="#">5026221175 Gabriella Jessica Prawira</a>
 
-        <!-- Links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
-          </li>
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="/chat">CHAT</a>
+                </li>
+            </ul>
+            </nav>
+            <br>
 
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              DATABASE
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="/keranjangbelanja">Keranjang Belanja</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
 <div class="container">
 
     @yield('konten')

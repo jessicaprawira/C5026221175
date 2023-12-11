@@ -5,34 +5,35 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-
 class ChatController extends Controller
 {
-	public function index()
-	{
-    	// mengambil data dari table
-		$chat = DB::table('chat')->get();
-    	//convert emot
+    public function index()
+    {
+        // Read text from the database
+        $record = DB::table('chat')->first();
+
+        // Emoticon conversion rules
         $emoticons = [
-            ':))' => '/assets/1.png',
-            ':3'  => '/assets/2.png',
-            ':P'  => '/assets/3.png',
-            ':C'  => '/assets/4.png',
-            ';)'  => '/assets/5.png',
+            ':))' => '1.png',
+            ':3'  => '2.png',
+            ';)'  => '5.png',
+            ':P'  => '3.png',
+            ':C'  => '4.png',
         ];
 
-        // Explode pesan
-        $pesanarray = explode(",",$chat);
+        // Explode the string into an array based on spaces
+        $wordArray = explode(' ', $record->pesan);
+
+        // Replace emoticons with corresponding images
+        foreach ($wordArray as &$word) {
+            if (array_key_exists($word, $emoticons)) {
+                $word = '<img src="' . asset('' . $emoticons[$word]) . '" alt="' . $word . '" style="width:24px; height:24px;" />';
+            }
+        }
 
         // Implode the array back into a string
-        $convertedText = implode(' ', $pesanarray);
-
-        foreach ($pesanarray as $word) {
-            $convertedText .= array_key_exists($word, $emoticons) ? $emoticons[$word] : $word;
-            $convertedText .= ' ';
-        }
+        $convertedText = implode(' ', $wordArray);
 
         return view('indexchat', ['convertedText' => $convertedText]);
     }
-
 }
