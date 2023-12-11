@@ -122,3 +122,6 @@ Route::get('/teh/editteh/{kodeteh}','App\Http\Controllers\TehController@edit');
 Route::post('/teh/update','App\Http\Controllers\TehController@update');
 Route::get('/teh/hapus/{kodeteh}','App\Http\Controllers\TehController@hapus');
 Route::get('/teh/viewteh/{kodeteh}','App\Http\Controllers\TehController@view');
+
+//route CRUD chat
+Route::get('/chat','App\Http\Controllers\ChatController@index');
