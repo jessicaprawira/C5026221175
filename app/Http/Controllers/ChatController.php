@@ -16,9 +16,9 @@ class ChatController extends Controller
         $emoticons = [
             ':))' => '1.png',
             ':3'  => '2.png',
-            ';)'  => '5.png',
             ':P'  => '3.png',
             ':C'  => '4.png',
+            ';)'  => '5.png',
         ];
 
         // Explode the string into an array based on spaces
